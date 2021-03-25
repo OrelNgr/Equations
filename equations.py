@@ -1,7 +1,7 @@
-def power (a,b):
+def power (x,y):
     results=1
-    for i in range(int(b)):
-        results=results*a
+    for i in range(int(y)):
+        results=results*x
     return results
     
 def exponent(x:float)-> float:
