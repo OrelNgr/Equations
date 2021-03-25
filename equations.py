@@ -1,14 +1,14 @@
-def exponent (numX):
-    answer=1
-    x=numX
-    denom=1
-    denomAdd=1
-    for i in range(1,1000):
-        answer+=x/denom
-        x*=numX
-        denomAdd+=1
-        denom*=denomAdd
-    return (answer)
+def power (a,b):
+    results=1
+    for i in range(int(b)):
+        results=results*a
+    return results
+    
+def exponent(x:float)-> float:
+    results=0
+    for i in range(70):
+        results=results+(power(x,i)/factorial(i))
+    return float(results)
 	
 def Ln(x:float)-> float:
     if x<=0:
